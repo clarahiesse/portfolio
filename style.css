@@ -22,7 +22,7 @@ body {
     font-family: 'Inter', sans-serif;
     background: linear-gradient(135deg, var(--cream) 0%, var(--bordeaux-pale) 100%);
     color: var(--bordeaux-dark);
-    overflow-x: hidden; /* empêche le scroll horizontal */
+    overflow-x: hidden;
 }
 
  .coin {
@@ -30,49 +30,49 @@ body {
     bottom: 20px;   
     left: 20px;    
     width: 150px;   
-    opacity: 0.9;   /* un peu transparent si tu veux */
+    opacity: 0.9;   
     z-index: -1;   /* pour qu’elle passe au-dessus du reste */
   }
 
   .coté {
   position: absolute;
-  bottom: 20px;         
+  bottom: 20px;        
   right: -10px;        
   width: 200px;          
-  z-index: 1;          
-  opacity: 0.9;         
-  pointer-events: none; /*element non cliquable */
+  z-index: 1;           
+  opacity: 0.9;          /* légère transparence */
+  pointer-events: none;  /* pour ne pas bloquer les clics */
 }
 
 #parcours {
-  position: relative; /* pour que l’image soit positionnée par rapport à cette section */
+  position: relative; 
 }
 
 .bas {
   position: absolute;
   bottom: -145px;         
-  left: -65px;        
+  left: -65px;           
   width: 200px;          
-  z-index: 1;          
-  opacity: 0.9;         
-  pointer-events: none; /*element non cliquable */
+  z-index: 1;            
+  opacity: 0.9;          /* légère transparence */
+  pointer-events: none;  /* pour ne pas bloquer les clics */
 }
 
 #projects {
-  position: relative; /* pour que l’image soit positionnée par rapport à cette section */
+  position: relative; 
 }
-
-
 /* #endregion */
 
 /* #region **** Header*/
 header {
     background: var(--bordeaux-dark);
+    backdrop-filter: blur(10px);
     padding: 1.2rem 2rem;
     position: sticky;
     top: 0;
     z-index: 100;
     border-bottom: 2px solid var(--gold);
+    box-shadow: 0 4px 30px var(--shadow);
 }
 
 nav {
@@ -250,7 +250,6 @@ nav {
     background: linear-gradient(135deg, var(--bordeaux-light) 0%, var(--bordeaux-medium) 100%);
 }
 
-/*animations*/
 @keyframes morph {
     0%, 100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
     50% { border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%; }
