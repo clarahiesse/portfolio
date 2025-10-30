@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Clara HIESSE</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--image de fond-->
+    <img src="./background 2.png" class="coin">
+
+    <!--barre de navigation-->
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#hello">À propos de moi</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#parcours">Parcours</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="CV Clara Hiesse.pdf" download class="cv-button">📄 Télécharger mon CV</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--section "à propos de moi"-->
+    <section class="hero" id="hello">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Clara HIESSE</h1>
+                <p class="subtitle">Transformer l'innovation Tech en croissance Business.</p>
+                <p class="description">Je m’appelle Clara HIESSE, étudiante à NEOMA Business School ,en 2ème année, dans le programme TEMA, où je développe une double compétence en management et en technologies numériques.
+Curieuse et créative, j’aime explorer la manière dont l’innovation peut transformer la communication et la gestion de projets. J’ai déjà eu l’occasion de travailler sur des projets variés — de la création d’identité visuelle à la gestion de communautés en ligne.
+Mon objectif : évoluer dans un environnement dynamique où je peux allier stratégie, créativité et digital.
+En dehors de mes études, je m’intéresse à l’art, au design et au sport, qui m’aident à nourrir mon inspiration au quotidien.</p>
+                <a href="#projects" class="cta-button">Découvrir mes Projets</a>
+            </div>
+
+            <div class="hero-image">
+                <img src="photo cv .jpg" alt="Profile" class="profile-pic">
+            </div>
+        </div>
+    </section>
+
+    <!--section "competences"-->
+    <main>
+        <h2 class="section-title">Mon Double Profil : Tech & Management</h2>
+
+        <section id="competences">
+            <h3>Compétences</h3>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon">💻</div>
+                        <h3>TECH</h3>
+                        <p>Web & design : Figma, Canva, HTML/CSS
+                        <br>
+                        Data & analyse : Excel
+                        <br>
+                        IA & innovation : ChatGPT, Midjourney</p>
+                        
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon">📊</div>
+                        <h3>BUSINESS</h3>
+                        <p>Stratégie & entrepreneuriat : business model, études de marché, plan d’affaires
+                        <br>
+                        Marketing & communication : digital marketing, branding, réseaux sociaux
+                        <br>
+                        Gestion & finance : prévision budgétaire, Excel, business plan</p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--section "parcours"-->
+        <section id="parcours">
+            <h3>Mon Parcours</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <strong>2022-2024:</strong> lycée du Sacré Coeur- STMG option Gestion et Finance
+                    <br><br>
+                    <strong>2024-2029:</strong> Neoma Business School - cursus TEMA
+                    <br><br>
+                    <strong>Juin 2025 - Août 2026:</strong> Stage - UXCO Valhalla
+                    <br><br>
+                    <strong>Septembre 2025 - Janvier 2026:</strong> Semestre d'immersion - Zone01
+                </div>
+            </div>
+            <img src="./lys-background .png" class="coté">
+        </section>
+
+        <!--section "projets"-->
+        <section id="projects">
+            <div class="projects-header">
+                <h3>Projets</h3>
+            </div>
+              <div class="projects-grid">
+          <div class="project-card">
+    <div class="project-image" id="open-virtual-tour">
+        <img src="visite virtuelle .png" alt="Aperçu du projet">
+    </div>
+
+    <div class="project-content">
+        <h3>Visite Virtuelle</h3>
+        <p>Réalisée pendant mon stage, cette visite virtuelle 360° de la résidence Uxco Valhalla a d’abord servi de support interactif pour mon rapport, avant d’être utilisée comme outil de promotion et de valorisation des lieux.</p>
+        <div class="project-tags">
+            <span class="tag">#360°</span>
+            <span class="tag">#Intégration Web</span>
+            <span class="tag">#UX</span>
+        </div>
+    </div>
+</div>
+
+<div id="virtual-tour-modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <iframe src="https://clarahiesse.github.io/visite_virtuelle_uxco/" frameborder="0" width="100%" height="500px"></iframe>
+  </div>
+</div>
+
+                <div class="project-card">
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3>Projet de StartUp</h3>
+                        <p>En cours</p>
+                        <div class="project-tags">
+                            <span class="tag"></span>
+                            <span class="tag"></span>
+                            <span class="tag"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <img src="./calque 1.png" class="bas">
+        </section>
+    </main>
+ 
+    <!--section "contact"-->
+    <footer class="footer" id="contact">    
+        <div class="social-links">
+        <form id="contact-form" class="contact-footer">
+            <h1>contactez-moi</h1>
+                <div class="form-row">
+                    <input type="text" name="prenom" placeholder="Prénom" required>
+                    <input type="text" name="nom" placeholder="Nom" required>
+                </div>
+
+                <div class="form-row">
+                    <input type="email" name="email" placeholder="E-mail" required>
+                </div>
+
+                    <textarea name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="send-btn">Envoyer</button>
+        </form>
+
+
+                <p class="footer-name">Clara Hiesse</p>
+
+                <a href="https://www.linkedin.com/in/clara-hiesse-4524a6329/" target="_blank" class="footer-linkedin">
+                Mon LinkedIn
+                </a>
+
+                <p class="footer-note">© 2025 - Tous droits réservés</p>
+    </footer>
+
+</body>
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="script.js"></script>
+
+
+
+                    
